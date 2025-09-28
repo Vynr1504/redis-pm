@@ -175,7 +175,7 @@ class RedisPoolManager extends EventEmitter {
    * @emits RedisPoolManager#error - When pool initialization fails
    */
   async initializePool() {
-    console.log(`🏊 Initializing Redis connection pool (min: ${this.minConnections}, max: ${this.maxConnections})`);
+    console.log(` Initializing Redis connection pool (min: ${this.minConnections}, max: ${this.maxConnections})`);
     
     // Create minimum connections concurrently for faster startup
     const initPromises = [];
